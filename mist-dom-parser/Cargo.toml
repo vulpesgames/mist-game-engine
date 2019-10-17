@@ -1,13 +1,15 @@
 [package]
-name = "mist"
+name = "mist-dom-parser"
 version = "0.1.0"
 authors = ["Hikaru Terazono (3c1u) <298748+3c1u@users.noreply.github.com>"]
 edition = "2018"
 
+[lib]
+proc-macro = true
+
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-mist-core = { path = "../mist-core" }
-mist-dom = { path = "../mist-dom" }
-mist-dom-parser = { path = "../mist-dom-parser" }
-mist-graphics = { path = "../mist-graphics" }
+quote = "1.0.2"
+proc-macro-hack = "0.5.10"
+syn = "1.0.5"

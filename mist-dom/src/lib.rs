@@ -1,7 +1,4 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+use proc_macro_hack::proc_macro_hack;
+
+#[proc_macro_hack]
+pub use mist_dom_parser::render;

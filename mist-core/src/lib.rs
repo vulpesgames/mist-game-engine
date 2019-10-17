@@ -1,10 +1,7 @@
 mod types;
 pub use types::*;
 
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+pub mod component;
+pub mod context;
+
+pub mod prelude;
