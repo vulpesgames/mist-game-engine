@@ -5,4 +5,7 @@ members = [
     "mist-core",
     "mist-graphics",
     "mist-dom",
+    "mist-dom-parser",
+    "mist-dom-test",
+    "mist-runtime-linux",
 ]
