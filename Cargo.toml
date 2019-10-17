@@ -1,3 +1,8 @@
 [workspace]
 
-members = []
+members = [
+    "mist",
+    "mist-core",
+    "mist-graphics",
+    "mist-dom",
+]
