@@ -1,14 +1,17 @@
 extern crate proc_macro;
 
-use proc_macro::{TokenStream, TokenTree, Ident, Punct, Spacing, Group, Delimiter};
+use proc_macro::{TokenStream, TokenTree, Literal, Group, Delimiter};
 use proc_macro_hack::proc_macro_hack;
-use quote::quote;
+use quote::{quote, quote_spanned};
 use syn::{parse_macro_input, Expr};
 
 mod ast;
 mod lexer;
 mod parser;
+mod parser_combinator;
 mod codegen;
+
+use lexer::Token;
 
 #[proc_macro_hack]
 pub fn render(input: TokenStream) -> TokenStream {
