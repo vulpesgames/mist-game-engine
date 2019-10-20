@@ -19,7 +19,6 @@ pub fn render(input: TokenStream) -> TokenStream {
     
     // unroll stream
     let tokens = lexer::unroll_token(input);
-    println!("{:#?}", tokens);
 
     output.extend(vec![
         TokenTree::Group(
